@@ -33,11 +33,15 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Create temporary index.html
+        run: echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=home.html"><title>Redirecting...</title></head><body>If you are not redirected, <a href="home.html">click here</a>.</body></html>' > index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
           path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Clean up temporary index.html
+        run: rm index.html
+        if: always() # Ensure this step runs even if previous steps fail
