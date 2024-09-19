@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="CSSbillys.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Εργασία ΠΔΕ. Κορτσιμελίδης Βασίλης</title>
+
+
+<meta name="charset" content="utf-8">
+<script type="text/javascript" charset="utf-8">
+
+function epikirwsh(){
+	
+	var emailekfrasi =/^([a-zA-Z0-9_\.\-]{3,})+\@(([a-zA-Z0-9\-]{3,})+\.)+([a-zA-Z0-9]{2,})+$/;
+	
+	
+	
+	if (document.form1.onoma.value.length <1){
+		alert("Παρακαλούμε συμπληρώστε το ονομά σας.");
+		
+		return false;
+	}
+	
+	
+	
+	if (document.form1.epitheto.value.length <1){
+		alert("Παρακαλούμε συμπληρώστε το Επιθετό σας.");
+		
+		return false;
+	}
+			
+	if (document.forms.form1.sxolia.value<1){
+		alert("Παρακαλούμε συμπληρώστε τα σχολιά σας.");
+		
+		return false;
+	}
+	
+	if(document.forms.form1.email1.value<1){
+	alert("Παρακαλούμε δώσε ενα email");
+	return false;
+	}
+	   
+	
+     var email= document.getElementById("email");	
+		if (!emailekfrasi.test(email.value)) {
+		alert("Παρακαλούμε δώσε ενα έγκυρο email");
+	return false;
+	}
+
+
+	
+	
+	alert("Ευχαριστούμε για το σχολιό σας");
+	return true;
+	
+	
+}
+
+
+
+
+
+
+</script>
+
+</head>
+<body>
+
+
+<div id="header">
+<h2 align="center" >Πρόγραμμα Σπουδών Τμήματος Πληροφορικής</h2>
+</div>
+
+
+
+<div id="menu">
+<br />
+<br />
+<br />
+<br />
+</div>
+
+<div id="main" align="justify">
+
+<u><h2 align="center">Επικοινωνία</h2></u>
+
+<p align="center" >Στείλτε μας τα σχόλιά σας!</p3>
+
+<form name="form1" onsubmit="return epikirwsh();">
+
+Όνομα:<input type="text"  size="20" name="onoma" style="background:#ABBEBE;" /><br/>
+Επίθετο:<input type="text" size="20" name="epitheto" style="background:#ABBEBE;" /><br/>
+Email:<input type="text" size="20" id="email" name="email1" style="background:#ABBEBE;"/>
+<br/>
+Σχόλια:<br/>
+<textarea  style="background:#ABBEBE;"  name="sxolia"> </textarea><br/>
+
+<input type="submit" value="Αποστολή" />
+<input type="reset" value="Καθαρισμός"/>
+</form>
+
+
+
+</div>
+
+<div id="footer">
+Κορτσιμελίδης Βασίλης
+<iframe  src="http://free.timeanddate.com/clock/i1tpdwka/n26/tlgr17/fn12/fc333/tcabbebe/fti/tt0/th1" frameborder="0" width="322" height="16" align="right"></iframe>
+</div>
+
+<div class="horizontalmenu">
+ <ul>
+  <li><a href="home.html">Αρχική</a></li>
+  <li><a href="epikoinwnia.html">Επικοινωνία</a></li>
+ </ul>
+</div>
+
+<div class="kathetomenu">
+ <ul>
+  <li><a href="eksamino1.html">1ο Εξάμηνο</a></li>
+  <li><a href="eksamino3.html">3ο Εξάμηνο</a></li>
+  <li><a href="eksamino5.html">5ο Εξάμηνο</a></li>
+  <li><a href="eggrafi.html">Εγγραφή</a></li>
+  
+ </ul>
+</div>
+</body>
+</html>

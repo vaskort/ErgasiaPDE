@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="CSSbillys.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Εργασία ΠΔΕ. Κορτσιμελίδης Βασίλης</title>
+
+<meta name="charset" content="utf-8">
+<script type="text/javascript" charset="utf-8">
+
+function epikirwsh(){
+	document.getElementById("lathos1").innerHTML="";
+	document.getElementById("lathos2").innerHTML="";
+	document.getElementById("lathos3").innerHTML="";
+	document.getElementById("lathos4").innerHTML="";
+	document.getElementById("lathos5").innerHTML="";
+	
+	if (document.form1.onoma.value.length <1){
+		alert("Παρακαλούμε συμπληρώστε το ονομά σας.");
+		document.getElementById("lathos1").innerHTML="Παρακαλούμε συμπληρώστε το ονομά σας.";
+		return false;
+	}
+	
+	if (document.form1.epitheto.value.length <1){
+		alert("Παρακαλούμε συμπληρώστε το Επιθετό σας.");
+		document.getElementById("lathos2").innerHTML="Παρακαλούμε συμπληρώστε το Επιθετό σας.";
+		return false;
+	}
+	
+	if (document.form1.am.value.length <1){
+		alert("Παρακαλούμε συμπληρώστε τον Αριθμό Μητρώου σας.");
+		document.getElementById("lathos3").innerHTML="Παρακαλούμε συμπληρώστε τον Αριθμό Μητρώου σας.";
+		return false;
+	}
+	
+	if (document.form1.eksamino.value.length <1){
+		alert("Παρακαλούμε συμπληρώστε το Εξαμηνό σας.");
+		document.getElementById("lathos4").innerHTML="Παρακαλούμε συμπληρώστε το Εξαμηνό σας.";
+		return false;
+	}
+	
+	if (document.form1.select1.selectedIndex==-1){
+		alert("Παρακαλούμε επιλέξτε το μάθημα στο οποίο θέλετε να εγγραφείτε");
+		document.getElementById("lathos5").innerHTML="Παρακαλούμε επιλέξτε το μάθημα στο οποίο θέλετε να εγγραφείτε";
+		return false;
+	}
+	onoma="Η εγγραφή του φοιτητή "+(document.form1.onoma.value)+" "+(document.form1.epitheto.value)+" στο μάθημα "+(document.form1.select1.selectedIndex.value)+" ολοκληρώθηκε επιτυχώς";
+	alert(onoma);
+	return true;
+	
+	
+}
+
+function vevewsh(){
+	if (document.form1.select1.selectedIndex==0){
+	document.getElementById("paragrafos").innerHTML="Το μάθημα που διαλέξατε δεν έχει προαπαιτούμενα!";
+	}
+	
+	if (document.form1.select1.selectedIndex==1){
+	document.getElementById("paragrafos").innerHTML="Βεβαιωθείτε ότι έχετε περάσει το μαθημα 'Προγραμματισμός Η/Υ ΙΙ' για να επιλέξετε αυτό το μάθημα";
+	}
+	
+	if (document.form1.select1.selectedIndex==2){
+	document.getElementById("paragrafos").innerHTML="Βεβαιωθείτε ότι έχετε περάσει το μαθημα 'Αρχιτεκτονική Υπολογιστών' για να επιλέξετε αυτό το μάθημα";
+	}
+	
+	if (document.form1.select1.selectedIndex==3){
+	document.getElementById("paragrafos").innerHTML="Το μάθημα που διαλέξατε δεν έχει προαπαιτούμενα!";
+	}
+	
+	if (document.form1.select1.selectedIndex==0){
+	document.getElementById("paragrafos").innerHTML="Το μάθημα που διαλέξατε δεν έχει προαπαιτούμενα!";
+	}
+
+
+}
+
+
+
+
+
+</script>
+
+</head>
+<body>
+
+
+<div id="header">
+<h2 align="center" >Πρόγραμμα Σπουδών Τμήματος Πληροφορικής</h2>
+</div>
+
+
+
+<div id="menu">
+<br />
+<br />
+<br />
+<br />
+</div>
+
+<div id="main" align="justify">
+
+<u><h2 align="center">Εγγραφή</h2></u>
+
+<p align="center" >Παρακαλούμε συμπληρώστε <b>όλα</b> τα στοιχεία της φόρμας ώστε να πραγματοποιηθεί επιτυχώς η εγγραφή σας.</p3>
+
+<form name="form1" onsubmit="return epikirwsh();">
+
+Όνομα:<input type="text"  size="20" name="onoma" style="background:#ABBEBE;" /><span id="lathos1" style="color:#F00;"></span><br/>
+Επίθετο:<input type="text" size="20" name="epitheto" style="background:#ABBEBE;" /><span id="lathos2" style="color:#F00;"></span><br/>
+Αριθμός Μητρώου:<input type="text" size="20" name="am" style="background:#ABBEBE;" /><span id="lathos3" style="color:#F00;"></span><br/>
+Εξάμηνο:<input type="text" size="20" name="eksamino" style="background:#ABBEBE;" /><span id="lathos4" style="color:#F00;"></span><br/>
+<select name="select1" size="2" onchange="vevewsh();">
+<option value="choice1">Αριθμητική Ανάλυση & Προγρ/μός Επιστημ. Εφαρμογών</option>
+<option value="choice2">Δομές Δεδομένων</option>
+<option value="choice3">Λειτουργικά Συστήματα Ι</option>
+<option value="choice4">Πληροφοριακά Συστήματα Ι</option>
+<option value="choice5">Θεωρία Πιθανοτήτων και Στατιστική</option>
+</select> <span id="lathos5" style="color:#F00;"></span><br/>
+<p align="left" id="paragrafos" style="font-size:14px;"></p>
+<ol>
+<li>Θεωρία:<input type="radio" checked="checked" name="radio" /></li>
+<li>Εργαστήριο:<input type="radio" name="radio"/> </li>
+<li>Και τα δύο:<input type="radio" name="radio"/> </li>
+<input type="submit" value="Αποστολή" />
+<input type="reset" value="Καθαρισμός"/>
+</ol>
+</form>
+
+
+
+</div>
+
+<div id="footer">
+Κορτσιμελίδης Βασίλης
+<iframe  src="http://free.timeanddate.com/clock/i1tpdwka/n26/tlgr17/fn12/fc333/tcabbebe/fti/tt0/th1" frameborder="0" width="322" height="16" align="right"></iframe>
+</div>
+
+<div class="horizontalmenu">
+ <ul>
+  <li><a href="home.html">Αρχική</a></li>
+  <li><a href="epikoinwnia.html">Επικοινωνία</a></li>
+ </ul>
+</div>
+
+<div class="kathetomenu">
+ <ul>
+  <li><a href="eksamino1.html">1ο Εξάμηνο</a></li>
+  <li><a href="eksamino3.html">3ο Εξάμηνο</a></li>
+  <li><a href="eksamino5.html">5ο Εξάμηνο</a></li>
+  <li><a href="eggrafi.html">Εγγραφή</a></li>
+  
+ </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<style type="text/css">
+
+.kathetomenu {
+	position:absolute;
+	width: 155px;
+	left: 3em;
+	top:9.5em;
+	height: 103px;
+}
+.kathetomenu ul {
+	position:absolute;
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	left: 52px;
+	top: 150px;
+}
+.kathetomenu ul li {
+ display: block;
+ padding: 0px 10px;
+ margin: 0px;
+ list-style: none;
+}
+.kathetomenu a {
+ display: block;
+ background: url('button.gif') top left no-repeat;
+ width: 117px;
+ height: 28px;
+ padding: 3px 0px 0px 0px;
+ margin: 0px;
+ border: 0px;
+ color: white;
+ text-decoration: none;
+ text-align: center;
+ font-size: 15px;
+ font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.kathetomenu a:visited {
+ color:#F60;
+}
+.kathetomenu a:hover {
+ color:#FC0;
+}
+
+
+
+.horizontalmenu ul {
+	position:absolute;
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	text-align: center;
+	right: 6em;
+	top: 5.4em;
+}
+.horizontalmenu ul li {
+ display: block;
+ float:left;
+ margin: 0px;
+ list-style: none;
+}
+.horizontalmenu a {
+ display: block;
+ background: url('button.gif') top left no-repeat;
+ width: 112px;
+ height: 28px;
+ padding: 3px 5px 0px 0px;
+ margin: 0px;
+ border: 0px;
+ color: white;
+ text-decoration: none;
+ font-size: 15px;
+ font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
+.horizontalmenu a:visited {
+ color:#F60;
+}
+.horizontalmenu a:hover {
+ color:#FC0;
+}
+
+
+h2:hover {
+	text-decoration:underline;
+	text-shadow:#0CF;
+	font-weight:400;
+}
+
+#header{
+	height:5em;
+	bottom:4em;
+	padding:1em;
+	background-color:#000;
+	padding-top:6px;
+	margin-right:3em;
+	margin-left:1em;
+	background: #ABBEBE;
+	color:#333;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif
+	}
+
+	
+
+
+	
+
+
+#main {	
+	margin-top:1em;
+	margin-bottom:1em;
+	margin-right:3em;
+	padding-top:1em;
+	background-color: #333;
+	padding-left:0.5em;
+	padding-right:0.5em;
+	height:500px;
+	width:77%;
+	float:right;
+	color:#333;
+	background: #F2F2E6;
+}
+
+#menu {
+	
+	background: #ABBEBE;
+	margin-left:1em;
+	margin-bottom:1em;
+	margin-top:1em;
+	float:left;
+	width:15%;
+	height:515px;
+	color: #333;
+	}
+
+#footer {
+	margin-right:3em;
+	margin-left:1em;
+	padding:10px;
+	background: #ABBEBE;
+	clear:both;
+	color: #333;
+	
+}
+
+
+
+body {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:14px
+	margin:0;
+	padding:0;
+	}
+	
+#stoxoi {
+	position:absolute;
+	height:172px;
+	width:857px;
+	left: 269px;
+	top: 374px;
+	font-size:12px;
+	text-align:left;
+	margin-top:1em;
+	margin-bottom:1em;
+	margin-right:3em;
+	padding-top:1em;
+	float:right;
+}
+
+</style>
